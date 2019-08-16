@@ -1,5 +1,5 @@
 import React from 'react';
-import Articles from '../components/Article';
+import Events from '../components/Event';
 import axios from 'axios';
 
 
@@ -34,7 +34,7 @@ class EventList extends React.Component {
     }
     render() {
         return(
-            <Articles data={this.state.events}/>
+            <Events data={this.state.events}/>
 
         )
 

@@ -10,7 +10,7 @@ const IconText = ({ type, text }) => (
   </span>
 );
 
-const Articles = (props) => {
+const Events = (props) => {
     return (
         
         <List
@@ -46,7 +46,7 @@ const Articles = (props) => {
             >
                 <List.Item.Meta
                 avatar={<Avatar src={item.avatar} />}
-                title={<a href={`articles/${item.id}`}>{item.title}</a>}
+                title={<a href={`events/${item.id}`}>{item.title}</a>}
                 description={item.created_at}
                 />
                 Written by {item.author}
@@ -56,4 +56,4 @@ const Articles = (props) => {
     )
 }
 
-export default Articles;
+export default Events;

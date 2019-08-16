@@ -12,7 +12,6 @@ const Layout1 = (props) => {
       <Menu
         theme="dark"
         mode="horizontal"
-        defaultSelectedKeys={['2']}
         style={{ lineHeight: '64px' }}
       >
         <Menu.Item key="1"><Link to='/'>Home</Link></Menu.Item>
