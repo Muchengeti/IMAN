@@ -13,15 +13,15 @@ urlpatterns = router.urls
 # from .views import ArticleUpdateView, EventUpdateView, ArticleDeleteView, EventDeleteView
 
 # urlpatterns = [
-#     path('articles', ArticleListView.as_view()),
-#     path('articles/ create', ArticleCreateView.as_view()),
-#     path('articles/<pk>', ArticleDetailView.as_view()),
-#     path('articles/<pk>/update', ArticleUpdateView.as_view()),
-#     path('articles/<pk>/delete', ArticleDeleteView.as_view()),
-#     path('events', EventListView.as_view()),
+#     path('articles/', ArticleListView.as_view()),
+#     path('articles/create/', ArticleCreateView.as_view()),
+#     path('articles/<pk>/', ArticleDetailView.as_view()),
+#     path('articles/<pk>/update/', ArticleUpdateView.as_view()),
+#     path('articles/<pk>/delete/', ArticleDeleteView.as_view()),
+#     path('events/', EventListView.as_view()),
 #     path('events/<pk>', EventDetailView.as_view()),
-#     path('events/<pk>/update', EventUpdateView.as_view()),
-#     path('events/<pk>/delete', EventDeleteView.as_view()),
+#     path('events/<pk>/update/', EventUpdateView.as_view()),
+#     path('events/<pk>/delete/', EventDeleteView.as_view()),
 
 
 # ]

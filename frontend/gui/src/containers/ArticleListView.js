@@ -1,7 +1,8 @@
 import React from 'react';
 import Articles from '../components/Article';
 import axios from 'axios';
-import CustomForm from '../components/Form';
+import ArticleForm from '../components/ArticleForm';
+import { Button } from 'antd';
 
 
 const listData = [];
@@ -37,10 +38,13 @@ class ArticleList extends React.Component {
         return(
             <div>
                 <h1 align="center">Articles</h1>
+                <Button align="middle">Create Article</Button>
+                <br/>
+                <br/>
                 <Articles data={this.state.articles}/>
                 <br />
                 <h2>Create Article</h2>
-                <CustomForm requestType="post" articleID={null} btnText="Create"/>
+                <ArticleForm requestType="post" articleID={null} btnText="Create"/>
             </div>
            
 

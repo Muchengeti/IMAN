@@ -1,6 +1,8 @@
 import React from 'react';
 import Events from '../components/Event';
 import axios from 'axios';
+import EventForm from '../components/EventForm';
+import { Button } from 'antd';
 
 
 const listData = [];
@@ -34,7 +36,12 @@ class EventList extends React.Component {
     }
     render() {
         return(
-            <Events data={this.state.events}/>
+            <div>
+                <h1 align="center">Events</h1>
+                <Events data={this.state.events}/>
+                <br />
+                <EventForm requestType="post" eventID={null} btnText="Create"></EventForm>
+            </div>
 
         )
 

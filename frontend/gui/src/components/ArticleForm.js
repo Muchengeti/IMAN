@@ -2,18 +2,18 @@ import React from 'react';
 import { Form, Input, Button } from 'antd';
 import axios from 'axios';
 
-class CustomForm extends React.Component {
+class ArticleForm extends React.Component {
 
     handleFormSubmit = (event, requestType, articleID) => {
         const title = event.target.elements.title.value;
         const author = event.target.elements.author.value;
         const content = event.target.elements.content.value;
         
-
-        console.log(title, author)
+        console.log("hello");
+        console.log(title, author);
         switch ( requestType ) {
             case 'post':
-                return axios.post('http://localhost:8000/api/', {
+                return axios.post('http://localhost:8000/api/articles/', {
                     title: title,
                     author: author,
                     content: content
@@ -22,7 +22,7 @@ class CustomForm extends React.Component {
                 .then(res => console.log(res))
                 .catch(error => console.err.log(error));
             case 'put':
-            return axios.put(`http://localhost:8000/api/${articleID}/`, {
+            return axios.put(`http://localhost:8000/api/articles/${articleID}/`, {
                 title: title,
                 author: author,
                 content: content
@@ -55,5 +55,5 @@ class CustomForm extends React.Component {
     }
 }
 
-export default CustomForm;
+export default ArticleForm;
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import Articles from '../components/Article';
 import axios from 'axios';
-import CustomForm from '../components/Form';
+import CustomForm from '../components/ArticleForm';
 import logo from './home-background.png';
 import logo2 from './image2.png';
 
