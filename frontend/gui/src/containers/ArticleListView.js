@@ -24,7 +24,7 @@ class ArticleList extends React.Component {
     }
 
     componentDidMount(){
-        axios.get('http://localhost:8000/api/')
+        axios.get('http://localhost:8000/api/articles/')
             .then(res => {
                 this.setState({
                     articles: res.data
@@ -36,6 +36,7 @@ class ArticleList extends React.Component {
     render() {
         return(
             <div>
+                <h1 align="center">Articles</h1>
                 <Articles data={this.state.articles}/>
                 <br />
                 <h2>Create Article</h2>

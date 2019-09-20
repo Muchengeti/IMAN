@@ -4,9 +4,11 @@ import ArticleList from './containers/ArticleListView';
 import ArticleDetail from './containers/ArticleDetailView';
 import EventList from './containers/EventListView';
 import EventDetail from './containers/EventDetailView';
+import Home from './containers/HomeView';
 
 const BaseRouter = () => (
     <div>
+        <Route exact path = '/home' component={Home}/>
         <Route exact path = '/articles' component={ArticleList}/>
         <Route exact path = '/articles/:articleID' component={ArticleDetail}/>
         <Route exact path = '/events' component={EventList}/>

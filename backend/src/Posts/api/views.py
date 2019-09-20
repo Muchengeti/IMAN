@@ -9,6 +9,11 @@ class ArticleViewSet(viewsets.ModelViewSet):
     serializer_class = ArticleSerializer
     queryset = Article.objects.all()
 
+class EventViewSet(viewsets.ModelViewSet):
+      
+    serializer_class = EventSerializer
+    queryset = Event.objects.all()
+
 # class ArticleListView(ListAPIView):
 #     queryset = Article.objects.all()
 #     serializer_class = ArticleSerializer
