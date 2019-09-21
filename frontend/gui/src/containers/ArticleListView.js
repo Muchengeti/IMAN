@@ -4,6 +4,7 @@ import axios from 'axios';
 import ArticleForm from '../components/ArticleForm';
 import ArticleModal from '../components/ArticleModal';
 import { Button } from 'antd';
+import SearchBar from '../components/SearchBar';
 
 
 const listData = [];
@@ -38,15 +39,15 @@ class ArticleList extends React.Component {
     render() {
         return(
             <div>
-                <h1 align="center">Articles</h1>
-                <ArticleModal></ArticleModal>
+                <ArticleModal btnText="Create Article"></ArticleModal>
+                <h1 align="center"><font size="5">Articles</font></h1>
                 <br/>
-                <br/>
+                <SearchBar></SearchBar>
+                <br />
                 <Articles data={this.state.articles}/>
                 <br />
                 <h2>Create Article</h2>
                 <ArticleForm requestType="post" articleID={null} btnText="Create"/>
-                
             </div>
            
 

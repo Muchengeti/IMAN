@@ -2,7 +2,9 @@ import React from 'react';
 import Events from '../components/Event';
 import axios from 'axios';
 import EventForm from '../components/EventForm';
+import EventModal from '../components/EventModal';
 import { Button } from 'antd';
+import SearchBar from '../components/SearchBar';
 
 
 const listData = [];
@@ -37,7 +39,11 @@ class EventList extends React.Component {
     render() {
         return(
             <div>
-                <h1 align="center">Events</h1>
+                <EventModal></EventModal>
+                <h1 align="center"><font size="5">Events</font></h1>
+                <br />
+                <SearchBar></SearchBar>
+                <br />
                 <Events data={this.state.events}/>
                 <br />
                 <EventForm requestType="post" eventID={null} btnText="Create"></EventForm>

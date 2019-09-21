@@ -2,7 +2,7 @@ import React from 'react';
 import { Modal, Button } from 'antd';
 import { Form, Input} from 'antd';
 
-class ArticleModal extends React.Component {
+class EventModal extends React.Component {
   state = { visible: false };
 
   showModal = () => {
@@ -34,10 +34,10 @@ class ArticleModal extends React.Component {
     return (
       <div>
         <Button type="primary" onClick={this.showModal}>
-          Create Article
+          Create Event
         </Button>
         <Modal
-          title="Enter Your Article Details"
+          title="Enter Your Event Details"
           visible={this.state.visible}
           onOk={this.handleOk}
           onCancel={this.handleCancel}
@@ -51,6 +51,15 @@ class ArticleModal extends React.Component {
             <Form.Item label="Author">
                 <Input name="author" placeholder="Enter author" />
             </Form.Item>
+            <Form.Item label="Group">
+                <Input name="group" placeholder="Enter group" />
+            </Form.Item>
+            <Form.Item label="Location">
+                <Input name="event_location" placeholder="Enter location" />
+            </Form.Item>
+            <Form.Item label="Time">
+                <Input name="event_time" placeholder="Enter time" />
+            </Form.Item>
             <Form.Item label="Content">
                 <Input name="content" placeholder="Enter content" />
             </Form.Item>
@@ -63,4 +72,4 @@ class ArticleModal extends React.Component {
   }
 }
 
-export default ArticleModal;
+export default EventModal;
