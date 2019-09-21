@@ -48,22 +48,22 @@ class EventForm extends React.Component {
         <div background-color="white">
             <Form onSubmit={(event) => this.handleFormSubmit(event, this.props.requestType, this.props.eventID)}>
             <Form.Item label="Title">
-                <Input name="title" placeholder="Enter title here" />
+                <Input name="title" placeholder="Enter title" />
             </Form.Item>
             <Form.Item label="Author">
-                <Input name="author" placeholder="Enter author here" />
+                <Input name="author" placeholder="Enter author" />
             </Form.Item>
             <Form.Item label="Group">
-                <Input name="group" placeholder="Enter group here" />
+                <Input name="group" placeholder="Enter group" />
             </Form.Item>
             <Form.Item label="Location">
-                <Input name="event_location" placeholder="Enter location here" />
+                <Input name="event_location" placeholder="Enter location" />
             </Form.Item>
             <Form.Item label="Time">
-                <Input name="event_time" placeholder="Enter time here" />
+                <Input name="event_time" placeholder="Enter time" />
             </Form.Item>
             <Form.Item label="Content">
-                <Input name="content" placeholder="Enter content here" />
+                <Input name="content" placeholder="Enter content" />
             </Form.Item>
             <Form.Item>
                 <Button type="primary" htmlType="submit">{this.props.btnText}</Button>

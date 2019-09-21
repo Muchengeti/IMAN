@@ -2,6 +2,7 @@ import React from 'react';
 import Articles from '../components/Article';
 import axios from 'axios';
 import ArticleForm from '../components/ArticleForm';
+import ArticleModal from '../components/ArticleModal';
 import { Button } from 'antd';
 
 
@@ -38,13 +39,14 @@ class ArticleList extends React.Component {
         return(
             <div>
                 <h1 align="center">Articles</h1>
-                <Button align="middle">Create Article</Button>
+                <ArticleModal></ArticleModal>
                 <br/>
                 <br/>
                 <Articles data={this.state.articles}/>
                 <br />
                 <h2>Create Article</h2>
                 <ArticleForm requestType="post" articleID={null} btnText="Create"/>
+                
             </div>
            
 
