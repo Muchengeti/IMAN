@@ -49,7 +49,7 @@ const Articles = (props) => {
                 title={<a href={`articles/${item.id}`}>{item.title}</a>}
                 description={item.created_at}
                 />
-                Written by {item.author}
+                Posted by {item.author}
             </List.Item>
             )}
         /> 

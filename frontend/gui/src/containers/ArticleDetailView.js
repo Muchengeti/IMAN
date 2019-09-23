@@ -26,6 +26,11 @@ class ArticleDetail extends React.Component {
                 <Card title={this.state.article.title}>
                 <p>
                     {this.state.article.content}
+                    <br />
+                    <br />
+                    <b>Written by</b> 
+                    <br />
+                    {this.state.article.author}
                 </p>
                 </Card>
                 <ArticleForm requestType="put" articleID={this.props.match.params.articleID} btnText="Update"/>

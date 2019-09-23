@@ -13,6 +13,7 @@ class Article(models.Model):
 
 class Event(models.Model):
     title = models.CharField(max_length=120)
+    cover_image = models.ImageField(upload_to='images/', default='default.jpg')
     author = models.CharField(max_length=120)
     group = models.CharField(max_length=120)
     created_at = models.DateTimeField(auto_now_add=True)

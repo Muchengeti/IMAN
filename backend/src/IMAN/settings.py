@@ -135,3 +135,9 @@ REST_FRAMEWORK = {
 
 CORS_ORIGIN_ALLOW_ALL = True
 
+# URL we can use in our templates for the files
+MEDIA_URL = '/media/'
+
+# The absolute filesystem path to the directory for user-uploaded files
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+

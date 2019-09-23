@@ -23,7 +23,13 @@ class EventDetail extends React.Component {
         return(
             <Card title={this.state.event.title}>
                 <p>
-                    {this.state.event.content}
+                    <p><b>Group</b> <br /> {this.state.event.group}</p>
+                    <p><b>Time</b> <br />{this.state.event.event_time}</p>
+                    <p><b>Location</b> <br />{this.state.event.event_location}</p>
+                    <br />
+                    <p><b>Description</b> <br />{this.state.event.content}</p>
+                    <br />
+                    <p><b>Created by</b> <br /> {this.state.event.author}</p>
                 </p>
             </Card>
            

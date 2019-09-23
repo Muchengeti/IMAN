@@ -40,16 +40,16 @@ const Events = (props) => {
                 <img
                     width={272}
                     alt="logo"
-                    src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png"
+                    src={item.cover_image}//"https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png"
                 />
                 }
             >
                 <List.Item.Meta
-                avatar={<Avatar src={item.avatar} />}
+                avatar={<Avatar src={item.cover_image} />}
                 title={<a href={`events/${item.id}`}>{item.title}</a>}
                 description={item.created_at}
                 />
-                Written by {item.author}
+                Posted by {item.author}
             </List.Item>
             )}
         /> 
