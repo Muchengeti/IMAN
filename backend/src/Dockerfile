@@ -7,7 +7,7 @@ RUN apt-get update && apt-get upgrade -y && apt-get autoremove && apt-get autocl
 ARG PROJECT=myproject
 ARG PROJECT_DIR=/var/www/${PROJECT}
 RUN mkdir -p $PROJECT_DIR
-WORKDIR $PROJECT_DIR
+WORKDIR $PROJECT_DIR/backend/src
 
 # ENV VIRTUAL_ENV=/var/venv
 # RUN python -m virtualenv --python=/usr/bin/python $VIRTUAL_ENV
