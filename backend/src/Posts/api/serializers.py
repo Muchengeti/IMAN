@@ -4,7 +4,7 @@ from Posts.models import Article, Event
 class ArticleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Article
-        fields = ('id', 'title', 'author', 'created_at', 'content')
+        fields = ('id', 'cover_image', 'title', 'author', 'created_at', 'content')
 
 class EventSerializer(serializers.ModelSerializer):
     class Meta:

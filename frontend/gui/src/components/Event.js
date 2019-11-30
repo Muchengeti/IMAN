@@ -45,7 +45,7 @@ const Events = (props) => {
                 }
             >
                 <List.Item.Meta
-                avatar={<Avatar src={item.cover_image} />}
+                avatar={<Avatar src={item.avatar} />}
                 title={<a href={`events/${item.id}`}>{item.title}</a>}
                 description={item.created_at}
                 />
